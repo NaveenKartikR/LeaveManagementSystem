@@ -1,0 +1,29 @@
+<form class="box">
+  <div id="message">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Email</th>
+            <th>Date</th>
+            <th>Reason</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of leaveData; index as i">
+            <td>{{item.email}}</td>
+            <td>{{item.date}}</td>
+            <td>{{item.reason}}</td>
+            <td>{{item.approved}}</td>
+            <td>
+              <button class="buttons" (click)="validate(i, 'Approved')">Accept</button>
+              <button class="buttons" (click)="validate(i, 'Not approved')">Reject</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <a routerLink="/logout" class="button">Logout</a>
+  </div>
+</form>

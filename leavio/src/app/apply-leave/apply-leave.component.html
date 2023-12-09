@@ -1,0 +1,19 @@
+<form class ="box" (submit)="applyLeave($event)">
+  <div class="container">
+    <h1>Apply Leave</h1>
+  <div>
+    <input type="date" autocomplete="off" placeholder="date" id="date">
+  </div>
+  <div>
+    <textarea rows="4" cols="50" placeholder="Reason" id="reason"></textarea>
+  </div>
+  <div>
+    <button type="submit" id="submit"><b>Apply</b></button>
+  </div>
+  <br>
+  <div>
+    <a routerLink="/dashboard" class="button"><b>Go back</b></a>
+  </div>
+</div>
+</form>
+<app-user-credentials></app-user-credentials>

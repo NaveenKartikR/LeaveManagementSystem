@@ -1,0 +1,44 @@
+<div class="bg">
+  <a routerLink="/" class="button"><b>Back</b></a>
+  <div class="container">
+    <div class="title">REGISTRATION</div>
+    <div class="content">
+      <form class = "box" (submit)="registerUser($event)">
+
+        <div class="user-details">
+          <div class="input-box">
+            <span class ="details">Roll Number</span>
+            <input type="text" autocomplete="off" placeholder="Roll No" id="rollno" required>
+          </div>
+          <div class="input-box">
+            <span class ="details">Name</span>
+            <input type="text" autocomplete="off" placeholder="Name" id="name" required>
+          </div>
+          <div class="input-box">
+            <span class ="details">E-mail</span>
+            <input type="email" autocomplete="off" placeholder="Email ID" id="email" required>
+          </div>
+          <div class="input-box">
+            <span class ="details">Create Password</span>
+            <input type="password" autocomplete="off" placeholder="Enter Password" id="password" required>
+          </div>
+          <div class="input-box">
+            <span class ="details">Confirm Password</span>
+            <input type="password" autocomplete="off" placeholder="Confirm Password" id="cpassword" required>
+          </div>
+          <div class="input-box">
+            <span class ="details">Mobile Number</span>
+            <input type="tel" autocomplete="off" placeholder="Mobile Number" id="mobile" required>
+          </div>
+          <div class="input-box">
+            <span class ="details">Course</span>
+            <input type="text" autocomplete="off" placeholder="Course" id="course" required>
+          </div>
+          <div>
+            <button type="submit" id="submit"><b>Register</b></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

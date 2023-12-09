@@ -1,0 +1,95 @@
+form {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 3px 5px 10px rgba(10, 217, 253, 0.938);
+}
+
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 1000px;
+  font-family: sans-serif;
+}
+
+.box input[type = "text"], .box input[type = "email"], .box input[type = "password"] {
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box input[type = "text"]:focus, .box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+
+
+button#submit {
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+button#submit:hover {
+  background: #2ecc71;
+  color: black;
+}
+
+.bg a{
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  border:0;
+  background: black;
+  display: block;
+  margin: 20px 20px;
+  text-align: center;
+  border: 2px solid black;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.bg a:hover{
+  background: white;
+  color: black;
+}

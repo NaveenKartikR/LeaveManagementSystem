@@ -1,0 +1,29 @@
+<form class="box">
+  <div id="message">
+      <table class="styled-table" style="position:fixed;left:30%; top:0%">
+        <thead>
+          <tr>
+            <th>Email</th>
+            <th>Date</th>
+            <th>Reason</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of leaveData; index as i">
+            <td>{{item.email}}</td>
+            <td>{{item.date}}</td>
+            <td>{{item.reason}}</td>
+            <td>{{item.approved}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+  </div>
+</form>
+<app-user-credentials></app-user-credentials>
+<div class="btn">
+  <a routerLink="/dashboard" class="button"><b>Go back</b></a>
+</div>
+
